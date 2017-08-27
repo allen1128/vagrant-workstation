@@ -158,14 +158,15 @@
 # sudo chmod +x /usr/local/bin/docker-compose
 # sudo sh -c "curl -L https://raw.githubusercontent.com/docker/compose/1.3.3/contrib/completion/bash/docker-compose > /etc/bash_completion.d/docker-compose"
 
-# Install docker-cleanup command
-cd /tmp
+## Install docker-cleanup command
+#cd /tmp
 #git clone https://gist.github.com/76b450a0c986e576e98b.git
-cd 76b450a0c986e576e98b
-sudo mv docker-cleanup /usr/local/bin/docker-cleanup
-sudo chmod +x /usr/local/bin/docker-cleanup
+#cd 76b450a0c986e576e98b
+#sudo mv docker-cleanup /usr/local/bin/docker-cleanup
+#sudo chmod +x /usr/local/bin/docker-cleanup
 
 #Install ChefDK
+echo 'Install ChefDK'
 wget -q "https://opscode-omnibus-packages.s3.amazonaws.com/ubuntu/12.04/x86_64/chefdk_0.6.2-1_amd64.deb" –no-check-certificate -P /tmp
 sudo dpkg -i /tmp/chefdk*.deb
 sudo apt-get -f install -y
@@ -190,3 +191,5 @@ sudo apt-get -f install python-pip -y
 # Change ownership
 sudo chown -hR vagrant:vagrant ~/Development
 sudo chown -hR vagrant:vagrant ~
+
+echo 'Finished'
