@@ -166,11 +166,11 @@
 #sudo chmod +x /usr/local/bin/docker-cleanup
 
 #Install ChefDK
-echo 'Install ChefDK'
-wget -q "https://opscode-omnibus-packages.s3.amazonaws.com/ubuntu/12.04/x86_64/chefdk_0.6.2-1_amd64.deb" –no-check-certificate -P /tmp
-sudo dpkg -i /tmp/chefdk*.deb
-sudo apt-get -f install -y
-rm /tmp/chefdk*.deb
+# echo 'Install ChefDK'
+# wget -q "https://opscode-omnibus-packages.s3.amazonaws.com/ubuntu/12.04/x86_64/chefdk_0.6.2-1_amd64.deb" –no-check-certificate -P /tmp
+# sudo dpkg -i /tmp/chefdk*.deb
+# sudo apt-get -f install -y
+# rm /tmp/chefdk*.deb
 
 #Install Python Anaconda
 #echo 'Installing Anaconda 2-4.0.0'
