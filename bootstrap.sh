@@ -1,18 +1,18 @@
 #!/usr/bin/env bash
 
-# echo 'Update packages list...'
-# echo "------------------------"
-# apt-get -y update
+echo 'Update packages list...'
+echo "------------------------"
+apt-get -y update
 
-# echo 'Install Xubuntu Desktop & co...'
-# echo "------------------------"
-# export DEBIAN_FRONTEND=noninteractive
-# apt-get -y --force-yes --no-install-recommends install xubuntu-desktop mousepad xubuntu-icon-theme \
-# xfce4-goodies xubuntu-wallpapers gksu cifs-utils xfce4-whiskermenu-plugin firefox \
-# xarchiver filezilla synaptic curl vim wget
+echo 'Install Xubuntu Desktop & co...'
+echo "------------------------"
+export DEBIAN_FRONTEND=noninteractive
+apt-get -y --force-yes --no-install-recommends install xubuntu-desktop mousepad xubuntu-icon-theme \
+xfce4-goodies xubuntu-wallpapers gksu cifs-utils xfce4-whiskermenu-plugin firefox \
+xarchiver filezilla synaptic curl vim wget
 
-# echo 'Install VB addon and x11 display'
-# sudo apt-get -y --force-yes --no-install-recommends install virtualbox-guest-utils virtualbox-guest-x11 virtualbox-guest-dkms
+echo 'Install VB addon and x11 display'
+sudo apt-get -y --force-yes --no-install-recommends install virtualbox-guest-utils virtualbox-guest-x11 virtualbox-guest-dkms
 
 # echo 'Set New York timezone...'
 # echo "------------------------"
@@ -180,8 +180,8 @@
 #source activate py27conda2_3_0
 
 #Install PIP
-echo 'Install PIP'
-sudo apt-get -f install python-pip -y
+# echo 'Install PIP'
+# sudo apt-get -f install python-pip -y
 
 #Install Flask Excel
 #echo 'Install Flask Excel'
